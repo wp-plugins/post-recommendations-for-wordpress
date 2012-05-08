@@ -1,4 +1,4 @@
-=== Plugin Name ===
+=== Post Recommendations for WordPress ===
 Contributors: ankurt
 Tags: recommendations, post, jquery, ajax, images, thumbnails
 Requires at least: 2.0.2
