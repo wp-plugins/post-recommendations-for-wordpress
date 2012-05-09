@@ -11,6 +11,8 @@ jQuery-powered recommendations.
 
 == Description ==
 
+**Please update to version 1.1** to fix broken AJAX issues with logged-out users.
+
 Use as a short code: 
 
 `[recommend_posts_for_me]`
