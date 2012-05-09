@@ -3,6 +3,7 @@ Contributors: ankurt
 Tags: recommendations, post, jquery, ajax, images, thumbnails
 Requires at least: 2.0.2
 Tested up to: 3.2.1
+Stable tag: 1.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -31,3 +32,7 @@ For example, you may do
 
 Put the unzipped folder into the Plugins directory and activate the plugin. Then, use [recommend_posts_for_me] in or the PHP template tag. 
 
+== Changelog ==
+
+= 1.1 =
+* There was a bug in 1.0 that only let logged in viewers view the recommendations. This bug has now been fixed to let non-prillaged users also view recommendations via AJAX. 
