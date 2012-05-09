@@ -114,7 +114,10 @@ function recommend_something_func( $atts ) {
 add_shortcode( 'recommend_posts_for_me', 'recommend_something_func' );
 
 // define ajaxurl on the front end 
-add_action('wp_head','wprecommendations_ajaxurl');
+
+if ( !is_admin() ) : 
+	add_action('wp_head','wprecommendations_ajaxurl');
+endif; 
 
 function wprecommendations_ajaxurl() {
 ?>
@@ -124,7 +127,7 @@ var ajaxurl = '<?php echo admin_url('admin-ajax.php'); ?>';
 <?php
 }
 
-add_action('wp_ajax_get_posts', 'prefix_ajax_get_posts' ); 
+add_action('init', 'prefix_ajax_get_posts' ); 
 add_action('wp_ajax_nopriv_get_posts', 'prefix_ajax_get_posts');
 
 
