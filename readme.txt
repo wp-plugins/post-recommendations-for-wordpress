@@ -11,7 +11,7 @@ jQuery-powered recommendations.
 
 == Description ==
 
-**Please update to version 1.1** to fix broken AJAX issues with logged-out users.
+**Please update to version 1.1** or higher to fix broken AJAX issues with logged-out users.
 
 Use as a short code: 
 
