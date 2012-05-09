@@ -127,7 +127,7 @@ var ajaxurl = '<?php echo admin_url('admin-ajax.php'); ?>';
 <?php
 }
 
-add_action('init', 'prefix_ajax_get_posts' ); 
+add_action('wp_ajax_get_posts', 'prefix_ajax_get_posts' ); 
 add_action('wp_ajax_nopriv_get_posts', 'prefix_ajax_get_posts');
 
 
