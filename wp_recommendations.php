@@ -3,7 +3,7 @@
 Plugin Name: Post Recommendations for WordPress
 Plugin URI: http://oldmill1.github.com/post-recommendations-for-wordpress/
 Description: Give your visitors more posts to see. 
-Version: 1.1
+Version: 1.1.2
 Author: Ankur Taxali
 Author URI: http://oldmill1.github.com/
 License: GPL2
@@ -23,6 +23,8 @@ License: GPL2
     You should have received a copy of the GNU General Public License
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */ 
+
+add_theme_support( 'post-thumbnails' ); 
 
 include 'recommendationsApp.php'; 
 
@@ -114,7 +116,10 @@ function recommend_something_func( $atts ) {
 add_shortcode( 'recommend_posts_for_me', 'recommend_something_func' );
 
 // define ajaxurl on the front end 
-add_action('wp_head','wprecommendations_ajaxurl');
+
+if ( !is_admin() ) : 
+	add_action('wp_head','wprecommendations_ajaxurl');
+endif; 
 
 function wprecommendations_ajaxurl() {
 ?>
@@ -124,8 +129,7 @@ var ajaxurl = '<?php echo admin_url('admin-ajax.php'); ?>';
 <?php
 }
 
-add_action('wp_ajax_my_action', 'prefix_ajax_get_posts' ); 
-
+add_action('wp_ajax_get_posts', 'prefix_ajax_get_posts' ); 
 add_action('wp_ajax_nopriv_get_posts', 'prefix_ajax_get_posts');
 
 

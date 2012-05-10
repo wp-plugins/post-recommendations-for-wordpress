@@ -11,6 +11,8 @@ jQuery-powered recommendations.
 
 == Description ==
 
+**Please update to version 1.1** or higher to fix broken AJAX issues with logged-out users.
+
 Use as a short code: 
 
 `[recommend_posts_for_me]`
@@ -36,6 +38,3 @@ Put the unzipped folder into the Plugins directory and activate the plugin. Then
 
 = 1.1 =
 * There was a bug in 1.0 that only let logged in viewers view the recommendations. This bug has now been fixed to let non-prillaged users also view recommendations via AJAX. 
-
-= 1.1.2 =
-* Stablized and fixed bugs. Should work for all users, not logged in and logged in. 
