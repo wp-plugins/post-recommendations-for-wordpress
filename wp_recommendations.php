@@ -3,7 +3,7 @@
 Plugin Name: Post Recommendations for WordPress
 Plugin URI: http://oldmill1.github.com/post-recommendations-for-wordpress/
 Description: Give your visitors more posts to see. 
-Version: 1.1.2
+Version: 1.1.3
 Author: Ankur Taxali
 Author URI: http://oldmill1.github.com/
 License: GPL2
